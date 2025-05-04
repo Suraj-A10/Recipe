@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="review.css">
+
+</head>
+
+<body>
+    <div id="main">
+
+        <h2 class="text-light">Leave a Review</h2>
+        <form method="POST" action="">
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br><br>
+    
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+    
+            <label>Your Review:</label><br>
+            <textarea name="review" required></textarea><br><br>
+    <div class="text-center">
+            <button class="btn-sub " type="submit" name="submit">Submit Review</button></div>
+        </form>
+        
+       <div class="hding"><h1>All Reviews</h1></div> 
+        <% if (reviews.length > 0) { %>
+            <% reviews.forEach(review => { %>
+                <div class="review">
+                    <h4><%= review.name %></h4>
+                    <small><%= review.email %></small>
+                    <p><%= review.review %></p>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No reviews yet.</p>
+        <% } %>
+        
+    
+    </div>
+
+</body>
+
+</html>

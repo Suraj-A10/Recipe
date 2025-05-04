@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular in Our Shop</title>
+     <!-- bootstrap links -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<link rel="stylesheet" href="/popular.css">
+
+
+<!-- JavaScript for Modals -->
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+window.addEventListener("DOMContentLoaded", () => {
+    fetch("navbar1.html")
+      .then((res) => res.text())
+      .then((data) => {
+        const nav = document.querySelector(".navbar1");
+        if (nav) nav.innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((data) => {
+        const foot = document.querySelector(".footer");
+        if (foot) foot.innerHTML = data;
+      });
+  });
+</script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <%- include('navbar') %>
+
+     <!-- body -->
+<div class="container-fluid">
+<section class="header">
+<div>
+    <img src="recipe assets/kitchen.webp" alt="header">
+</div>
+</section>
+<div class="f1 text-center mt-5 mb-5">
+<h1 class="mb-3"><u>Kitchen Tips</u></h1>
+    <p>Find cookware recommendations, money-saving ideas, holiday help, how-to tips, and more cooking and baking suggestions from our editors.</p>
+
+   <!-- Menu Items with Modals -->
+<div class="menu">
+    <div class="menu-item" onclick="openModal('ingredientsModal')">All About Ingredients</div>
+    <div class="menu-item" onclick="openModal('foodWishesModal')">Food Wishes: Behind the Recipe</div>
+    <div class="menu-item" onclick="openModal('conversionsModal')">Conversions</div>
+    <div class="menu-item" onclick="openModal('cookTimesModal')">Cook Times and Temperatures</div>
+    <div class="menu-item" onclick="openModal('foodSafetyModal')">Food Safety</div>
+    <div class="menu-item" onclick="openModal('healthModal')">Health and Nutrition</div>
+    <div class="menu-item" onclick="openModal('storageModal')">How To Food Storage and Kitchen Organization</div>
+    <div class="menu-item" onclick="openModal('kitchenModal')">In The Kitchen</div>
+</div>
+
+<!-- Modals -->
+<div id="ingredientsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('ingredientsModal')">&times;</span>
+        <h2>All About Ingredients</h2>
+        <p>Discover the best quality ingredients and how they can enhance your dishes.</p>
+    </div>
+</div>
+
+<div id="foodWishesModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('foodWishesModal')">&times;</span>
+        <h2>Food Wishes: Behind the Recipe</h2>
+        <p>Explore the stories and inspiration behind your favorite recipes.</p>
+    </div>
+</div>
+
+<div id="conversionsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('conversionsModal')">&times;</span>
+        <h2>Conversions</h2>
+        <p>Easily convert measurements for all your cooking needs.</p>
+    </div>
+</div>
+
+<div id="cookTimesModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('cookTimesModal')">&times;</span>
+        <h2>Cook Times and Temperatures</h2>
+        <p>Find the perfect cooking times and temperatures for any dish.</p>
+    </div>
+</div>
+
+<div id="foodSafetyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('foodSafetyModal')">&times;</span>
+        <h2>Food Safety</h2>
+        <p>Learn how to handle food safely to ensure hygiene and health.</p>
+    </div>
+</div>
+
+<div id="healthModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('healthModal')">&times;</span>
+        <h2>Health and Nutrition</h2>
+        <p>Maintain a balanced diet with nutritional tips and healthy recipes.</p>
+    </div>
+</div>
+
+<div id="storageModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('storageModal')">&times;</span>
+        <h2> How To Food Storage and Kitchen Organization</h2>
+        <p>Optimize your kitchen space and keep food fresh longer.</p>
+    </div>
+</div>
+
+<div id="kitchenModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('kitchenModal')">&times;</span>
+        <h2>In The Kitchen</h2>
+        <p>Explore kitchen tools and gadgets that make cooking easier.</p>
+    </div>
+</div>
+
+
+    <div class="social-icons">
+        <div class="social-icon"><i  style="color: red;" class="bi bi-pinterest"></i></div>
+        <div class="social-icon"><i  style="color: black;" class="bi bi-twitter"></i></div>
+        <div class="social-icon"><i  style="color: blue;" class="bi bi-facebook"></i></div>
+        <div class="social-icon"><i  style="color: green;" class="bi bi-whatsapp"></i></div>
+    </div>
+
+    </div>
+
+<section class="k2">
+<div class="row">
+    <div class="col-lg">
+        <img src="recipe assets/k1.jpg" alt="k1">
+        <h5 style="font-weight:600;" class="mt-3 ms-2">Trends</h5>
+        <h6 class="text-muted px-3" style="font-size:18px;">"From plant-based delights to fusion feasts — explore what's cooking in the culinary world."
+        "Bite into the buzz — where classic flavors meet modern food trends!"</h6>
+    </div>
+    <div class="col-lg">
+    <img src="recipe assets/k2.jpg" alt="k2">
+    <h5 style="font-weight:600;" class="mt-3 ms-2">Food Safety and Handling</h5>
+    <h6 class="text-muted px-3" style="font-size:18px;">"Safe food, happy bites — because every meal deserves careful handling."
+    "Handle with care, serve with love — keep food safe from kitchen to table."</h6>
+    </div>
+    <div class="col-lg">
+    <img src="recipe assets/k3.jpg" alt="k3">
+    <h5 style="font-weight:600;" class="mt-3 ms-2">Trends</h5>
+    <h6 class="text-muted px-3" style="font-size:18px;">"From gourmet twists to healthy bites — taste the trends that everyone's craving."
+    "Discover the future of food — where innovation meets irresistible flavors."</h6>
+    </div>
+</div>
+</section>
+
+<section class="k3">
+<div class="container py-5">
+    <div class="row text-center mt-3 p-4 mb-3" style="background-color:grey;border:1px;border-radius:5%;">
+       <h2 style="font-weight: 700;">Review Of Our Cook N Shop Community</h2> 
+    </div>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="recipe assets/peo1.jpg" alt="Profile" class="profile-img me-2">
+                        <h6><strong>Kunal Kapoor</strong> reviewed <a href="#" class="text-decoration-none">Broiled Steelhead Trout</a></h6>
+                    </div>
+                    <img src="recipe assets/review1.jpg" class="card-img-top" alt="Food1">
+                    <div class="card-body">
+                        <p class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p>"The presentation was as stunning as the taste! Every bite was bursting with freshness and warmth."</p>
+                        <small class="text-muted">2 hours ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="recipe assets/peo2.jpg" alt="Profile" class="profile-img me-2">
+                        <h6><strong>Abhimanyu</strong> asked a question about <a href="#" class="text-decoration-none">Moist & Delicious Banana Bread</a></h6>
+                    </div>
+                    <img src="recipe assets/review2.jpg" class="card-img-top" alt="food2">
+                    <div class="card-body">
+                    <p class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p>"Tried this dish today, and I'm blown away! Simple to make but packed with amazing taste — definitely a new favorite."</p>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="recipe assets/peo3.jpg" alt="Profile" class="profile-img me-2">
+                        <h6><strong>Navya</strong> tweaked <a href="#" class="text-decoration-none">The Real New York Bagel Recipe</a></h6>
+                    </div>
+                    <img src="recipe assets/review3.png" class="card-img-top" alt="food3">
+                    <div class="card-body">
+                    <p class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p>"Absolutely delicious! The flavors were perfectly balanced, and it felt like a gourmet experience at home."</p>
+                        <small class="text-muted">4 days ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="k4">
+    <h2>Trending Now</h2>
+
+    <div class="row">
+    <div class="col-lg">
+    <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+        <img src="recipe assets/trend1.jpg" class="card-img-top" alt="Dish Image 1">
+        <div class="card-body">
+            <h5 class="card-title">Trender Pot Roast</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg">
+    <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+        <img src="recipe assets/trend2.webp" class="card-img-top" alt="Dish Image 2">
+        <div class="card-body">
+            <h5 class="card-title">Chocolate Mousse</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg">
+    <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+        <img src="recipe assets/trend3.webp" class="card-img-top" alt="Dish Image 3">
+        <div class="card-body">
+            <h5 class="card-title">Bacony Deviled Eggs</h5>
+        </div>
+    </div>
+</div>
+<div class="col-lg">
+    <div class="card text-center shadow p-3 mb-5 bg-white rounded">
+        <img src="recipe assets/trend4.jpg" class="card-img-top" alt="Dish Image 4">
+        <div class="card-body">
+            <h5 class="card-title">Carrot Cake</h5>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</section>
+<section class="k5">
+    
+<div class="container mt-4">
+    <h2>Don't Miss</h2>
+  <div class="row mb-5">
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card text-white">
+        <img src="recipe assets/k5a.webp" class="card-img" alt="Dish 1">
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <h6 class="text-uppercase">Collection</h6>
+          <h4>50 Mediterranean Diet Recipes</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card text-white">
+        <img src="recipe assets/k5b.jpg" class="card-img" alt="Dish 2">
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <h6 class="text-uppercase">Collection</h6>
+          <h4>Nachos, 20 Ways</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card text-white">
+        <img src="recipe assets/k5c.jpg" class="card-img" alt="Dish 3">
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <h6 class="text-uppercase">Collection</h6>
+          <h4>21 Essential Italian Pastas</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+ </div>
+
+ <!-- footer -->
+ <%- include('footer') %>
+  
+</body>
+</html>

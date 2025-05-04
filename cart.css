@@ -1,0 +1,200 @@
+/* General Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #f6f4f4, #c3c9ad, #a3cef1);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.navbar1 {
+    top: 0;
+    width: 100%;
+    z-index: 1020; /* Higher than other content */
+  }
+/* Heading Styling */
+h2 {
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #444;
+    font-weight: 600;
+}
+
+/* Cart Item List */
+#cart-items {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Item Details */
+.item-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+/* Quantity Button */
+.qty-btn {
+    background-color: #fcb69f;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background-color: #ff7e5f;
+}
+
+/* Total Amount */
+#totalAmount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #020f01;
+}
+
+/* Payment Modal */
+.modal-content {
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #faedcd, #ccd5ae,#023047);
+    color: white;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-body input {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ade8f4;
+}
+
+
+
+#payButton{
+    background-color: #0e064a;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+   
+}
+#payButton:hover{
+    background-color: #086f2a;
+}
+
+/* view recipe section */
+.recipeshow h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 20px;
+    
+    box-shadow: 8px 12px 10px rgb(116, 114, 114);
+    animation: pulse 2s infinite alternate;
+    margin-top:40px;
+    text-align: center;
+}
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+.recipeinner {
+    background: linear-gradient(135deg, #8ecae6, #e9edc9, #d5bdaf, #778da9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 50px auto;
+    color: rgb(16, 15, 15);
+    font-family: 'Poppins', sans-serif;
+    animation: popIn 0.5s ease-in-out;
+    margin-top:50px;
+  }
+
+ .recipeinner .form-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .recipeinner .form-control {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .recipeinner .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  }
+
+  .recipeinner .btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 20px rgba(106, 17, 203, 0.3);
+  }
+
+  .recipeinner .btn-primary:hover {
+    background-color: #2575fc;
+    box-shadow: 0 15px 25px rgba(37, 117, 252, 0.4);
+  }
+
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,82 @@
+/* General Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #f6f4f4);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.navbar1 {
+    top: 0;
+    width: 100%;
+    z-index: 1020; /* Higher than other content */
+  }
+.header {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background: url('recipe assets/off1.jpg') no-repeat center center/cover;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+    border:1px grey;
+    border-radius:10% 0%;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.tit{
+    margin:60px 0px;
+}
+.tit h4{
+    font-size:40px;
+    font-weight: 700;
+}
+.tit span{
+    background:linear-gradient(#669bbc,#bde0fe,#e0e1dd);
+    padding:20px;
+    margin:20px 0px;
+    border:1px grey;
+    border-radius:30%;
+    box-shadow:6px 7px 8px grey;
+}
+.offer-card {
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+.offer-card:hover {
+    transform: scale(1.05);
+}
+.fst1 img{
+    height:300px;
+    width:415px;
+}
+.heart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+}
+.heart-icon:hover {
+    color: red;
+}

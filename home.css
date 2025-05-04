@@ -1,0 +1,319 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f5;
+    color: #333;
+}
+
+.hero {
+    background-color:#bde0fe;
+    padding: 120px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0c0c0c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+.explore-btn {
+    background: #fff;
+    color: #f26f4e;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:hover {
+    background: #66a6c8;
+    color: #4e14b9;
+    transform: scale(1.05);
+}
+
+.herointro{
+    height:auto;
+margin-top:-150px;
+text-align: end;
+}
+.herointro img{
+    height:300px;
+    width:300px;
+    box-shadow: 10px 10px 8px 10px grey;
+    margin-top:-90px;
+    border:1px solid black;
+    border-radius: 50%;
+    margin-bottom:10px;
+    transition: transform 0.3s ease-in-out;
+    }
+.herointro img:hover{
+    transform:translateY(-20px);
+    box-shadow: 10px 14px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* address section */
+.add1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add1 .address-section {
+    background-color: #eaf2ba;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 100px auto;
+}
+.add1 .btn-delivery {
+    background-color: #ffe8d6;
+    color: #f7941e;
+    border: none;
+}
+.add1 .btn-pickup {
+    background-color: #f5f5f5;
+    color: #777;
+    border: none;
+}
+.add1 .form-control {
+    border-radius: 10px;
+}
+.add1 .btn-update {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.add1 .btn-update:hover {
+    background-color: #0da517;
+    color: rgb(248, 251, 248);
+    border: none;
+    border-radius: 10px;
+}
+.add1 img{
+    height:500px;
+    width:500px;
+    border-radius:50%;
+    margin-top:50px;
+    margin-left:30px;
+    box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.add1 img:hover{
+    
+        transform:translateY(-20px);
+        box-shadow: 10px 14px 8px rgba(0, 0, 0, 0.2);
+    
+    
+}
+/* Container Background */
+#foodTab {
+    background: linear-gradient(145deg, #799ec4, #ebf4bd);
+    border-bottom: 1px grey;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Common Button Styles */
+  #foodTab .nav-link {
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Specific Gradients for Each Button */
+  #foodTab .nav-link.active {
+    background: linear-gradient(145deg, #4ade80, #22c55e);
+  }
+  
+  #foodTab .nav-link:nth-child(2) {
+    background: linear-gradient(145deg, #f87171, #ef4444);
+  }
+  
+  #foodTab .nav-link:nth-child(3) {
+    background: linear-gradient(145deg, #facc15, #f59e0b);
+  }
+  
+  /* Hover Effect */
+  #foodTab .nav-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+
+
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* .card:hover img {
+    transform: scale(1.1);
+} */
+.modal-open .card:hover,
+.modal-open .card img:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+.card p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.card button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background: #ff7e5f;
+    transform: scale(1.1);
+}
+
+/* achievements section */
+
+/* Section Title Styling */
+.section-title {
+    background: linear-gradient(145deg, #f7f9fc, #e0e7ff);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-title .k2 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.facts1 {
+    padding-bottom: 30px;
+  }
+  
+  .facts1 .count-box {
+    padding: 20px;
+    background: linear-gradient(145deg, #e9ecef, #adb5bd); /* Gradient Background */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer Shadow */
+    transition: all 0.3s ease-in-out;
+}
+.facts1 .count-box .purecounter {
+    font-size: 58px;
+    font-weight: bold;
+    color: #050d18;
+    transition: 0.5s ease-in-out;
+}
+  
+  .facts1 .count-box i {
+    display: block;
+    font-size: 54px;
+    color: #149ddd;
+    float: left;
+    line-height: 0;
+  }
+  .facts1 .count-box span {
+    font-size: 48px;
+    font-weight: bold;
+    color: #050d18;
+    margin-left: 60px;
+    display: inline-block;
+    
+}
+
+
+
+
+  .facts1 .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #122f57;
+  }
+  
+  .facts1 .count-box a {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: #122f57;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .facts1 .count-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+  
